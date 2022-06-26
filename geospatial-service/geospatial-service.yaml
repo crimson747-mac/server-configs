@@ -1,0 +1,21 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: '{cipher}38aa7751d61f30352c564bedb3268511d68eced0502fa1f7d5ed6005b4186a77'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.spatial.dialect.postgis.PostgisDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      show_sql: false
+      format_sql: false
+
+logging.level:
+  org.hibernate.SQL: debug
+  #org.hibernate.type: trace
