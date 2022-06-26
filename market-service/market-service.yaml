@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql:/P/localhost:3306/market
+    url: jdbc:mysql://localhost:3306/market
     username: root
     password: '{cipher}0a880d3ba37ba57b93af5829cbb5ee8ad35aeae5c5b9e333d435964d946555f7'
     driver-class-name: com.mysql.cj.jdbc.Driver
